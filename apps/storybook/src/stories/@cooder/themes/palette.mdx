@@ -1,0 +1,40 @@
+import { Meta, Title } from "@storybook/blocks";
+import PaletteTable from "./components/PaletteTable";
+
+<Meta title="@cooder/themes/Palette" />
+
+# Color Palette
+
+The Cooder color palette is designed to provide enough flexibility for your application while also remaining easy to use. We have placed a strong emphasis on accessibility when selecting these colors, but you should ensure that your specific use of color in your applications adheres to accessibility requirements.
+
+### Usage
+
+There are many different ways that you can use the color palette depending on how your application is structured.
+
+#### MUI Theme
+
+The recommended way to use these colors is by accessing them through the Cooder themes. The colors are assembled into several tokenized palettes that makes their usage more symantic. These palettes include primary, secondary, error, warning, info, and success (for a full view of what colors are accessible from the MUI theme palettes, check out the MUI [theme structure](https://mui.com/material-ui/customization/default-theme/) documentation).
+
+This allows you to use the color palette in several different ways:
+
+1. Component `color` prop
+   - Many MUI components have a color prop that accepts a palette name
+     ```tsx
+     <Button color={'primary'}>Primary</Button>
+     <Button color={'secondary'}>Secondary</Button>
+     <Button color={'warn'}>Warn</Button>
+     ```
+2. Theme-aware `sx` properties
+   - When using the `sx` property for styling, many css properties are made theme aware. This allows you to pass in string values to pull specific values from the palette (read the [full docs](https://mui.com/system/getting-started/the-sx-prop/) for more information about theme-aware properties).
+     ```tsx
+     <Box sx={{ color:'primary.main' }}>Tokenized Primary</Box>
+     <Box sx={{ color:'text.disabled' }}>Text Palette</Box>
+     <Box sx={{ color:'background.paper' }}>Background Palette</Box>
+     <Box sx={{ color:'grey.200' }}>Specific Color Value</Box>
+     ```
+
+### Palette Table
+
+The table below shows all of the NexusUI color values and how they can be accessed using the MUI theme palette or CSS variable names. Most definitions are identical between light and dark themes (indicated by '--' in the table), but some of the tokenized values (e.g., 'light' or 'main') are different.
+
+<PaletteTable />

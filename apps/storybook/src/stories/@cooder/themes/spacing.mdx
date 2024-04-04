@@ -1,0 +1,20 @@
+import { Meta, Title } from "@storybook/blocks";
+
+<Meta title="@cooder/themes/Spacing" />
+
+# Spacing
+
+The spacing value is used to specify the base spacing unit used throughout applications. All margins and paddings should be a multiple of this base value. Cooder uses a base spacing unit of 0.25rem (4px).
+
+### Usage
+
+MUI allows you to specify margins and padding using shorthand values that represent multiples of the base spacing unit. View [MUI Spacing](https://mui.com/system/spacing/) for more details.
+
+```tsx
+<Box sx={{ m: -2 }} />   // margin: -8px;
+<Box sx={{ m: 0 }} />    // margin: 0px;
+<Box sx={{ m: 0.5 }} />  // margin: 2px;
+<Box sx={{ m: 2 }} />    // margin: 8px;
+<Box sx={{ m: 4 }} />    // margin: 16px;
+...
+```

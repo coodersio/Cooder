@@ -1,0 +1,44 @@
+{
+  "name": "@cooder/themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@mui/material": "^5.15.0",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/x-data-grid": "^6.19.0",
+    "@mui/x-date-pickers": "^6.19.0",
+    "@mui/x-tree-view": "^6.17.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@mui/material": "^5.15.0",
+    "@mui/x-data-grid": "^6.19.0",
+    "@mui/x-date-pickers": "^6.19.0",
+    "@mui/x-tree-view": "^6.17.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@types/react": "^18.2.67",
+    "typescript": "^5.4.2",
+    "@mui/icons-material": "^5.15.14"
+  },
+  "homepage": "TODO",
+  "keywords": [
+    "hexagon",
+    "cooder",
+    "hmi",
+    "manufacturing intelligence",
+    "theme",
+    "react",
+    "ui",
+    "mui",
+    "colors",
+    "palette"
+  ]
+}
