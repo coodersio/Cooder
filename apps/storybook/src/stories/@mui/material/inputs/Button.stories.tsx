@@ -30,7 +30,7 @@ export default {
 } as Meta<typeof MuiButton>;
 
 export const Button: React.FC = () => {
-  const label = "Button";
+  const label = "Save theme";
   const variants: ButtonProps["variant"][] = ["contained", "outlined", "text"];
   const variations: ButtonProps[] = [
     { color: "primary" },
